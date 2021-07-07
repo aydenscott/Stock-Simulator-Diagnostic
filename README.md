@@ -17,9 +17,10 @@ Python program that scrapes data from Investopedia's Stock Simulator and writes 
 
 ## Disclaimers
 * Options are not supported, but implementation of options scraping would likely be easy to integrate
+* User may also have to tweak code to indicate what the Excel file should be called and where it should be stored
 * User must fill out username and password for their own account (Lines 27-29)
 ```# Log in
 driver.find_element_by_xpath(r"//*[@id='username']").send_keys(username)
 driver.find_element_by_xpath(r"//*[@id='password']").send_keys(password)
 ```
-![Screenshot of Excel Output](
+![Screenshot of Excel Output](https://github.com/aydenscott/Investopedia-Stock-Simulator-Diagnostic/blob/main/Screenshot%20(1).png)
