@@ -2,7 +2,6 @@ import xlsxwriter, re, os, sys
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from xlsxwriter.utility import xl_rowcol_to_cell
-from config import username, password
 
 # Delete file path to ensure xlsxwriter doesn't raise exception
 filename = r'stocks.xlsx'
@@ -25,6 +24,8 @@ driver.maximize_window()
 driver.implicitly_wait(5)
 
 # Log in
+username = os.environ.get('invest_username')
+password = os.environ.get('invest_password')
 driver.find_element_by_xpath(r"//*[@id='username']").send_keys(username)
 driver.find_element_by_xpath(r"//*[@id='password']").send_keys(password)
 driver.find_element_by_xpath(r"//*[@id='login']").click()
