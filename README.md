@@ -1,3 +1,5 @@
+# Due to a change in UI, this program is now deprecated
+
 # Investopedia-Stock-Simulator-Diagnostic
 Python program that scrapes data from Investopedia's Stock Simulator and writes to Excel
 
